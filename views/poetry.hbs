@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <div class="poetry-block">
+        <div class="poetry-title"></div>
+        <a class="poetry-author" href=""></a><br>
+        <div class="poetry-content">
+        </div>
+    </div>
+
+    <div class="my-loading">
+        <h4>載入中，請稍候...</h4>
+    </div>
+    
+</div>
+
+
+
+<div class="dataBlock">
+    <span id="myData" data-pid = "{{poetry_id}}"></span>
+</div>
+
+<script>
+getPoetry($('#myData').data('pid'));
+</script>

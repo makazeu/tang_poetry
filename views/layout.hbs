@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>全唐詩</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/normalize.css" rel="stylesheet">
+    <link href="/static/css/jumbotron-narrow.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/static/script/bootstrap.min.js"></script>
+    <script src="/static/script/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <a class="text-muted site-title" href="/">
+                <span class="glyphicon glyphicon-book"></span> 全唐詩
+            </a>
+        </div>
+
+        <div class="input-group font-fix">
+            <input type="text" class="form-control" aria-label="..." placeholder="請輸入檢索關鍵字">
+
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                    <span class="glyphicon glyphicon-search"></span> 檢索
+                    <span class="caret"></span>
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#" onclick="doSearch('title')"><span class="glyphicon glyphicon-th-large"></span> 標題</a></li>
+                    <li><a href="#" onclick="doSearch('content')"><span class="glyphicon glyphicon-align-justify"></span> 詩文</a></li>
+                    <!--
+                    <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> 標題和詩文</a></li>
+                    -->
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#" onclick="doSearch('author')"><span class="glyphicon glyphicon-user"></span> 作者</a></li>
+                </ul>
+            </div><!-- /btn-group -->
+
+        </div><!-- /input-group -->
+
+        <br>
+        {{{body}}}
+        <footer class="footer copyright">
+            <p>&copy; 2017 Makazeu <span class="glyphicon glyphicon-fire"></span></p>
+        </footer>
+
+    </div>  <!-- /container -->
+
+</body>
+</html>
